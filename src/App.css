@@ -1,0 +1,10 @@
+#root {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1128px;
+    width: 100%;
+    margin: 0 auto;
+}
