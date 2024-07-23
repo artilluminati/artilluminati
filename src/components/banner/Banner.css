@@ -1,5 +1,5 @@
 .banner {
-    position: absolute;
+    position: relative;
     width: 100%;
     z-index: 7;
     top: 0;

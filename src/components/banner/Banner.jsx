@@ -39,7 +39,7 @@ export default function Banner({ isLoadAnimating }) {
                 >
                     <span>
                         {showTypewriter && (
-                            <TypewriterEffect targetText={"artilluminati"} />
+                            <TypewriterEffect targetText={"arrtilluminati"} />
                         )}
                     </span>
                 </div>

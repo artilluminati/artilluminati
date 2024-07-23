@@ -1,4 +1,9 @@
-.nav {
+header {
+    position: absolute;
+    width: 100vw;
+    max-width: 100%;
+}
+nav {
     display: grid;
     grid-template-columns: 1fr auto 1fr;
     position: relative;
