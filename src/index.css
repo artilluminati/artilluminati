@@ -17,6 +17,8 @@
     --white: #fff;
     --bg: #0c0d0c;
 
+    --selection-bg: #4747477e;
+
     color-scheme: light dark;
     color: var(--main-text);
     background-color: var(--main-bg);
@@ -37,6 +39,7 @@ a {
 body {
     margin: 0;
     padding: 0;
+    background-color: var(--bg);
 }
 
 h1 {

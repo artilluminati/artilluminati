@@ -1,0 +1,15 @@
+.project-page {
+    z-index: 20;
+
+    position: fixed;
+    top: 100vh;
+    height: 100vh;
+    width: 100vw;
+    background: var(--main-bg);
+
+    transition: top 1s ease-in-out;
+}
+
+.project-page-show {
+    top: 0;
+}

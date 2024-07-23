@@ -1,3 +1,7 @@
+.skills {
+    overflow-x: hidden;
+}
+
 .skills__list {
     padding-block: 100px;
     width: 100%;
@@ -10,6 +14,14 @@
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
     cursor: grab;
+}
+.skills * {
+    -moz-user-select: none;
+    -o-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .skills__list:active {
@@ -39,7 +51,7 @@
 }
 .skill-card__visible {
     border: 1px var(--white) solid;
-    background-color: #4747477e;
+    background-color: var(--selection-bg);
 }
 
 .skill-card__img {
@@ -60,13 +72,6 @@
 
     opacity: 0;
     transition: opacity 0.2s ease-in-out;
-
-    -moz-user-select: none;
-    -o-user-select: none;
-    -khtml-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
 
     /* padding: 10px; */
 
