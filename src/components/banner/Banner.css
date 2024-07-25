@@ -22,7 +22,7 @@
 .banner__text-hello {
     font-family: var(--second-family);
     font-weight: 500;
-    font-size: 40px;
+    font-size: 2.5rem;
     text-align: center;
     color: var(--white);
     text-shadow: 0 0 135px rgba(0, 255, 139, 0.3);
@@ -35,7 +35,7 @@
 .banner__text-name {
     font-family: var(--second-family);
     font-weight: 700;
-    font-size: 111px;
+    font-size: 7em;
     text-align: center;
     color: var(--white);
     text-shadow: 0 0 135px rgba(0, 255, 139, 0.3);
@@ -73,7 +73,7 @@
     from {
         border-right: 5px solid #ffffff00;
     }
-    50% {
+    49% {
         border-right: 5px solid #ffffff00;
     }
     51% {

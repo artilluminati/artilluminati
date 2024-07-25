@@ -2,10 +2,36 @@
     margin-block: 100px;
 }
 
+.portfolio__filter {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
 .portfolio__card-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: max-content;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-auto-flow: row;
+
+    margin-block: 60px;
+    gap: 60px 20px;
+
+    min-height: 50vh;
+}
+
+.portfolio__card {
+    animation: cardAppearance 0.3s ease-in;
+}
+
+@keyframes cardAppearance {
+    from {
+        opacity: 0;
+        transform: translateY(5px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .portfolio__card-image {
@@ -51,18 +77,55 @@
 
 .portfolio__card-title {
     padding: 20px 10px 20px 10px;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
-.portdolio__card-skills {
+.portfolio__card-skills {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
 }
 
 .skill-badge {
+    cursor: pointer;
     padding: 5px 10px;
-    display: flex;
     border-radius: 10px;
+    color: var(--white);
+
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+
+    min-width: max-content;
+
+    -moz-user-select: none;
+    -o-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    background-color: #ffffff00;
+}
+.skill-badge:focus {
+    /* border: var(--white) 1px solid !important; */
+    outline: none;
+}
+.skill-badge:active {
+    outline: none;
+}
+.skill-badge__icon {
+    display: none;
+
+    max-height: 100%;
+    aspect-ratio: 1/1;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+.skill-selected {
     color: var(--main-bg);
 }

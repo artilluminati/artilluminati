@@ -28,8 +28,19 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-a {
+html {
+    scroll-behavior: smooth;
     font-size: 16px;
+}
+
+.container {
+    max-width: 1358px;
+    width: 100%;
+    margin-inline: auto;
+}
+
+a {
+    font-size: 1em;
 
     font-weight: 500;
     color: var(--main-text);
@@ -66,15 +77,24 @@ button:focus-visible {
     outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
-    :root {
-        color: #213547;
-        background-color: #ffffff;
+@media only screen and (max-width: 1358px) {
+    .container {
+        max-width: calc(100% - 40px);
+        padding-inline: 20px;
     }
-    a:hover {
-        color: #747bff;
+}
+
+@media only screen and (max-width: 1024px) {
+    html {
+        font-size: 14px;
     }
-    button {
-        background-color: #f9f9f9;
+}
+
+@media only screen and (max-width: 768px) {
+    html {
+        font-size: 14px;
+    }
+    .banner__text-name {
+        font-size: 5rem;
     }
 }

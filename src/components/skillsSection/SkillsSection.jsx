@@ -36,7 +36,7 @@ export default function SkillsSection() {
     };
 
     return (
-        <section className="skills container">
+        <section className="skills container" id="skills">
             <div
                 className="skills__list"
                 onMouseDown={handleMouseDown}

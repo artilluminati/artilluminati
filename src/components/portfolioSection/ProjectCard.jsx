@@ -1,18 +1,16 @@
 import { skills } from "/data";
-import { useState, useContext, createContext } from "react";
 import "./PortfolioSection.css";
 import ProjectCardSkill from "./ProjectCardSkill";
-import { ValueContext } from "../../context";
+import { useAppContext } from "../../contexts/AppContext/AppContextProvider";
 
 export default function ProjectCard({ ...props }) {
-    const [selectedProjectId, setSelectedProjectId] = useState(null);
-
-    const setValue = useContext(ValueContext);
+    const { isPageOpened, togglePageOpened } = useAppContext().pageControl;
+    const { currentProject, setCurrentProject } =
+        useAppContext().projectControl;
 
     const handleCardClick = () => {
-        console.log(setValue);
-        setValue(true);
-        setSelectedProjectId(props.id); // Update state with the project ID
+        setCurrentProject(props.id); // Update state with the project ID
+        togglePageOpened();
     };
 
     const filteredSkills = props.skills.map((projectSkill) => {
@@ -20,13 +18,13 @@ export default function ProjectCard({ ...props }) {
     });
 
     return (
-        <a className="portfolio__card" onClick={handleCardClick}>
-            <div className="portfolio__card-image">
+        <a className="portfolio__card">
+            <div className="portfolio__card-image" onClick={handleCardClick}>
                 <img src={props.thumbnail} alt="" />
             </div>
             <div className="portfolio__card-info">
                 <div className="portfolio__card-title">{props.title}</div>
-                <div className="portdolio__card-skills">
+                <div className="portfolio__card-skills">
                     {filteredSkills.map((badge) => (
                         <ProjectCardSkill
                             key={props.id + badge.title}

@@ -1,12 +1,11 @@
-import React, { useState, useEffect, createContext } from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css";
 import Banner from "./components/banner/Banner";
 import Header from "./components/header/Header";
 import PortfolioSection from "./components/portfolioSection/PortfolioSection";
 import ProjectFullscreen from "./components/projectFullscreen/ProjectFullscreen";
 import SkillsSection from "./components/skillsSection/SkillsSection";
-
-const ValueContext = createContext();
+import { AppContextProvider } from "./contexts/AppContext/AppContextProvider";
 
 function App() {
     const [isLoadAnimating, setIsLoadAnimating] = useState(false);
@@ -26,9 +25,9 @@ function App() {
 
     return (
         <>
-            <Header isLoadAnimating={isLoadAnimating} />
-            <Banner isLoadAnimating={isLoadAnimating} />
-            <ValueContext.Provider value={(value, setValue)}>
+            <AppContextProvider>
+                <Header isLoadAnimating={isLoadAnimating} />
+                <Banner isLoadAnimating={isLoadAnimating} />
                 <main>
                     <SkillsSection />
                     <PortfolioSection />
@@ -36,7 +35,7 @@ function App() {
                 <ProjectFullscreen
                 // projectControl={[showProjectPage, setShowProjectPage]}
                 />
-            </ValueContext.Provider>
+            </AppContextProvider>
         </>
     );
 }
