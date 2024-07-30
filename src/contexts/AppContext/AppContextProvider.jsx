@@ -32,6 +32,11 @@ export const useCreateAppContext = function (props) {
         setMenuOpened((_test) => !_test);
     });
 
+    const setCurrentProjectAndOpen = (projectId) => {
+        setCurrentProject(projectId);
+        togglePageOpened();
+    };
+
     const data = {
         pageControl: {
             isPageOpened,
@@ -39,7 +44,7 @@ export const useCreateAppContext = function (props) {
         },
         projectControl: {
             currentProject,
-            setCurrentProject,
+            setCurrentProjectAndOpen,
         },
         filterControl: {
             filterList,

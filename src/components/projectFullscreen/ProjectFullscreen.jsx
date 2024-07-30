@@ -4,6 +4,8 @@ import { useAppContext } from "../../contexts/AppContext/AppContextProvider";
 import CloseIcon from "../icons/CloseIcon";
 import OpenNewTabIcon from "../icons/OpenNewTabIcon";
 import ProjectCardSkill from "../portfolioSection/ProjectCardSkill";
+import React, { useRef, useEffect, useState } from "react";
+import useScrollBlock from "./UseScrollBlock";
 
 export default function ProjectFullscreen() {
     const { isPageOpened, togglePageOpened } = useAppContext().pageControl;
@@ -16,15 +18,37 @@ export default function ProjectFullscreen() {
         return skills.find((skill) => skill.id === projectSkill);
     });
 
+    const [blockScroll, allowScroll] = useScrollBlock();
+
+    useEffect(() => {
+        if (isPageOpened) {
+            blockScroll();
+        } else {
+            allowScroll();
+        }
+    }, [isPageOpened]);
+
     return (
         <div
+            // ref={ref}
+            // style={{ ...viewport }}
             className={
                 isPageOpened ? "project-page project-page-show" : "project-page"
             }
         >
             <div className="project-page__container container">
                 <div className="project-page__image">
-                    <img src={projectData.screenshot} alt="" />
+                    {Array.isArray(projectData.screenshots) ? (
+                        projectData.screenshots.map((screenshot) => (
+                            <img
+                                key={"projectFullscreen_" + screenshot}
+                                src={screenshot}
+                                alt=""
+                            />
+                        ))
+                    ) : (
+                        <img src={projectData.screenshots} alt="" />
+                    )}
                 </div>
                 <div className="project-page__description">
                     <div className="project-page__close-button-container">

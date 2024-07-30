@@ -36,7 +36,7 @@ export default function SkillsSection() {
     };
 
     return (
-        <section className="skills container" id="skills">
+        <section className="skills container" id={"skills"}>
             <div
                 className="skills__list"
                 onMouseDown={handleMouseDown}
@@ -46,7 +46,7 @@ export default function SkillsSection() {
             >
                 {skills.map((skill) => (
                     <SkillCard
-                        key={skill.title}
+                        key={skill.id + "_skill-list"}
                         title={skill.title}
                         image={skill.image}
                         // style={{ marginRight: "20px" }}

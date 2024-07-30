@@ -1,7 +1,7 @@
 /* eslint-disable */
 
 import { useEffect } from "react";
-import Svg from "../assets/img/logo-animated.svg?react";
+import Svg from "./logo-animated.svg?react";
 
 export default function LogoAnimated() {
     useEffect(() => {

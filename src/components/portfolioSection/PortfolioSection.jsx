@@ -12,14 +12,20 @@ export default function PortfolioSection() {
         filterList.length === 0
             ? projects
             : projects.filter((project) =>
-                  project.skills.some((skill) => filterList.includes(skill))
+                  filterList.every((skill) => project.skills.includes(skill))
               );
 
+    filteredProjects.sort((a, b) => a.id - b.id);
+
+    const filteredSkills = skills.filter((skill) =>
+        projects.some((project) => project.skills.includes(skill.id))
+    );
+
     return (
-        <div className="portfolio container" id="projects">
+        <div className="portfolio container" id={"projects"}>
             <h1>Проекты</h1>
             <div className="portfolio__filter">
-                {skills.map((badge) => (
+                {filteredSkills.map((badge) => (
                     <ProjectCardSkill
                         key={"filter " + badge.title}
                         {...badge}
@@ -28,7 +34,7 @@ export default function PortfolioSection() {
             </div>
             <div className="portfolio__card-container">
                 {filteredProjects.map((project) => (
-                    <ProjectCard key={project.id} {...project} />
+                    <ProjectCard key={"project" + project.id} {...project} />
                 ))}
             </div>
         </div>

@@ -72,3 +72,30 @@ nav {
         height: 70px;
     }
 }
+
+.nav__mobile-menu-button {
+    display: none;
+
+    position: relative;
+    z-index: 35;
+
+    display: none;
+    width: 60px;
+    height: 60px;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+}
+
+.nav__mobile-menu-button-opened {
+    opacity: 0;
+}
+
+@media only screen and (max-width: 768px) {
+    .nav__mobile-menu-button {
+        display: flex;
+    }
+    .nav__menu {
+        display: none;
+    }
+}
