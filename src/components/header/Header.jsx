@@ -7,7 +7,7 @@ import MenuIcon from "../icons/MenuIcon";
 import MobileNavMenu from "./MobileNavMenu/MobileNavMenu";
 
 export default function Header({ isLoadAnimating }) {
-    // isLoadAnimating = true;
+    isLoadAnimating = false;
 
     const { isMenuOpened, toggleMenuOpened } = useAppContext().menuControl;
 
@@ -48,13 +48,14 @@ export default function Header({ isLoadAnimating }) {
                 </div>
                 <div className="nav__logo">
                     <a href="/artilluminati/">
-                        <img
+                        {/* <img
                             src={logo}
                             alt="logo"
                             className={
                                 isLoadAnimating ? "nav__logo-hidden" : ""
                             }
-                        />
+                        /> */}
+                        <LogoAnimated />
                     </a>
                 </div>
                 <div className="nav__languages">{/* <button></button> */}</div>

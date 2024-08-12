@@ -20,7 +20,10 @@ export default function ProjectFullscreen() {
 
     const [blockScroll, allowScroll] = useScrollBlock();
 
+    const scrollRef = useRef(null);
+
     useEffect(() => {
+        scrollRef.current.scrollTo(0, 0);
         if (isPageOpened) {
             blockScroll();
         } else {
@@ -36,7 +39,7 @@ export default function ProjectFullscreen() {
                 isPageOpened ? "project-page project-page-show" : "project-page"
             }
         >
-            <div className="project-page__container container">
+            <div className="project-page__container container" ref={scrollRef}>
                 <div className="project-page__image">
                     {Array.isArray(projectData.screenshots) ? (
                         projectData.screenshots.map((screenshot) => (

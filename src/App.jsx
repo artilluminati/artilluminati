@@ -14,13 +14,14 @@ function App() {
 
     useEffect(() => {
         // Проверяем, есть ли значение в localStorage
-        const storedValue = localStorage.getItem("isLoadAnimating");
-        if (storedValue !== null) {
-            setIsLoadAnimating(false);
-        } else {
-            setIsLoadAnimating(true);
-            // Сохраняем значение в localStorage
-        }
+        // const storedValue = localStorage.getItem("isLoadAnimating");
+        // if (storedValue !== null) {
+        //     setIsLoadAnimating(false);
+        // } else {
+        //     setIsLoadAnimating(true);
+        //     // Сохраняем значение в localStorage
+        // }
+        setIsLoadAnimating(false);
     }, []);
 
     return (

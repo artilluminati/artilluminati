@@ -32,6 +32,9 @@ nav {
 .nav__logo img {
     height: 70px;
 }
+.nav__logo svg {
+    height: 70px;
+}
 .nav__logo-hidden {
     opacity: 0;
 }

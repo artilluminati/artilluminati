@@ -7,6 +7,7 @@
     width: 100%;
     overflow-y: visible !important;
     overflow-x: scroll;
+    scroll-snap-type: proximity;
     display: flex;
     align-items: flex-start;
     column-gap: 20px;
