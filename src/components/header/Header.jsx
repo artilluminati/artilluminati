@@ -41,7 +41,7 @@ export default function Header({ isLoadAnimating }) {
                         href="/artilluminati/"
                         onClick={() => scrollToElement("top")}
                     >
-                        главная
+                        в начало
                     </a>
                     <a onClick={() => scrollToElement("skills")}>навыки</a>
                     <a onClick={() => scrollToElement("projects")}>портфолио</a>

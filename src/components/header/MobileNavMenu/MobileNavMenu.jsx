@@ -62,7 +62,7 @@ export default function MobileNavMenu({ isLoadAnimating }) {
                         toggleMenuOpened();
                     }}
                 >
-                    главная
+                    в начало
                 </a>
                 <a
                     onClick={() => {

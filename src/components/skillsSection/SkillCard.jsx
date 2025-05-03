@@ -1,12 +1,12 @@
 import { useState } from "react";
 import "./SkillsSection.css";
 
-export default function SkillCard({ image, title, style }) {
+export default function SkillCard({ image, title, style, className = "" }) {
     const [isShowCard, SetIsShowCard] = useState(false);
 
     return (
         <div
-            className="skill-card"
+            className={`skill-card ${className}`}
             onMouseEnter={() => SetIsShowCard(true)}
             onMouseLeave={() => SetIsShowCard(false)}
             style={style}

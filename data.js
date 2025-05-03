@@ -67,11 +67,38 @@ export const skills = [
         image: base + "/assets/img/skills/Python-logo-notext.svg",
         color: "#8993be",
     },
+    {
+        id: "tailwind",
+        title: "Tailwind CSS",
+        image: base + "/assets/img/skills/tailwindcss-mark.d52e9897.svg",
+        color: "#38bdf8",
+    },
+    {
+        id: "vite",
+        title: "Vite",
+        image: base + "/assets/img/skills/vite.svg",
+        color: "#ffc41c",
+    },
+    {
+        id: "pet",
+        title: "pet-проект",
+        color: "#ffffff",
+    },
 ];
 
 export const projects = [
     {
         id: 0,
+        title: "Онлайн-школа Пуск",
+        thumbnail: base + "assets/img/projects/puskschool-thumbnail.png",
+        skills: ["laravel", "tailwind", "php", "js", "html/css", "vite"],
+        screenshots: base + "assets/img/projects/puskschool.ru_.png",
+        description:
+            "Верстка адаптивного лендинга с личным кабинетом и страницей курсов, подключением эквайринга.",
+        redirect: "https://puskschool.ru/",
+    },
+    {
+        id: 1,
         title: "Cloost SMP",
         thumbnail:
             base + "assets/img/projects/Снимок экрана 2024-07-22 162604.jpg",
@@ -83,10 +110,10 @@ export const projects = [
         redirect: "https://artilluminati.github.io/cloostsmp/",
     },
     {
-        id: 1,
+        id: 2,
         title: "Winstrike Tavern",
         thumbnail: base + "assets/img/projects/winstrike1.jpg",
-        skills: ["html/css", "figma", "js"],
+        skills: ["html/css", "figma", "js", "pet"],
         screenshots:
             base + "assets/img/projects/artilluminati.github.io_winstrike_.jpg",
         description:
@@ -94,37 +121,37 @@ export const projects = [
         redirect: "https://artilluminati.github.io/winstrike/",
     },
     {
-        id: 2,
+        id: 3,
         title: "Мой кошелёк",
         thumbnail: base + "assets/img/projects/ws-wallet.jpg",
-        skills: ["js", "html/css"],
+        skills: ["js", "html/css", "pet"],
         screenshots: base + "assets/img/projects/ws-wallet-full.jpg",
         description: "Приложение для учёта доходов и расходов.",
         redirect: "https://artilluminati.github.io/ws-wallet/",
     },
     {
-        id: 3,
+        id: 4,
         title: "Магазин смартфонов",
         thumbnail: base + "assets/img/projects/ws-mobile-phones-thumbnail.jpg",
-        skills: ["js", "html/css"],
+        skills: ["js", "html/css", "pet"],
         screenshots: base + "assets/img/projects/ws-mobile-phones.jpg",
         description: "",
         redirect: "https://artilluminati.github.io/ws-mobile-phones/",
     },
     {
-        id: 4,
+        id: 5,
         title: "FlightPool",
         thumbnail: base + "assets/img/projects/flighpool.jpg",
-        skills: ["html/css", "figma"],
+        skills: ["html/css", "figma", "pet"],
         screenshots: base + "assets/img/projects/FlightPool_index.html.jpg",
         description: "",
         redirect: "",
     },
     {
-        id: 5,
+        id: 6,
         title: "Robo.School",
         thumbnail: base + "assets/img/projects/robo.school.jpg",
-        skills: ["html/css"],
+        skills: ["html/css", "pet"],
         screenshots:
             base +
             "assets/img/projects/artilluminati.github.io_robo-school_.jpg",
@@ -132,10 +159,10 @@ export const projects = [
         redirect: "https://artilluminati.github.io/robo-school/",
     },
     {
-        id: 6,
+        id: 7,
         title: "BookMe",
         thumbnail: base + "assets/img/projects/bookme_thumbnail.jpg",
-        skills: ["laravel", "php", "html/css", "js"],
+        skills: ["laravel", "php", "html/css", "js", "pet"],
         screenshots: [
             base + "assets/img/projects/bookme_home.jpg",
             base + "assets/img/projects/bookme_login.jpg",
@@ -146,10 +173,10 @@ export const projects = [
         redirect: "",
     },
     {
-        id: 7,
+        id: 8,
         title: "МастерОК",
         thumbnail: base + "assets/img/projects/ws-masterok_.jpg",
-        skills: ["php", "html/css", "js"],
+        skills: ["php", "html/css", "js", "pet"],
         screenshots: [
             base + "assets/img/projects/ws-masterok_.jpg",
             base + "assets/img/projects/ws-masterok_orders.php.jpg",
@@ -161,7 +188,7 @@ export const projects = [
         redirect: "",
     },
     {
-        id: 8,
+        id: 9,
         title: "Школьные кружки",
         thumbnail: base + "assets/img/projects/sch49.jpg",
         skills: ["wp", "php", "bs", "html/css"],

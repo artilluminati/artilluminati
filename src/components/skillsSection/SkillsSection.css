@@ -82,3 +82,22 @@
 .tooltip__visible {
     opacity: 1;
 }
+
+@keyframes scrollHint {
+    0% {
+        transform: translateX(0);
+    }
+    20% {
+        transform: translateX(-100px);
+    }
+    40% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.scroll-hint-animation {
+    animation: scrollHint 2s ease-in-out;
+}

@@ -44,7 +44,7 @@ export default function Banner({ isLoadAnimating }) {
                     </span>
                 </div>
             </div>
-            <a className="banner__arrow container">
+            <a className="banner__arrow container" href="#skills">
                 <svg
                     width="124"
                     height="100%"
