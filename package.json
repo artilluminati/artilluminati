@@ -6,7 +6,7 @@
     "scripts": {
         "dev": "vite",
         "predeploy": "npm run build",
-        "deploy": "gh-pages -d dist",
+        "deploy": "gh-pages -d dist --repo=https://github.com/artilluminati/artilluminati",
         "build": "vite build --base=/artilluminati/",
         "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
         "preview": "vite preview"
