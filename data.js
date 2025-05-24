@@ -90,7 +90,7 @@ export const projects = [
     {
         id: 0,
         title: "Доставка От Бабушки",
-        thumbnail: base + "assets/img/projects/puskschool-thumbnail.png",
+        thumbnail: base + "assets/img/projects/dostavka-ot-babushki.netlify.app_ (1).png",
         skills: ["pet", "react", "tailwind", "js", "html/css", "vite"],
         screenshots: [base + "assets/img/projects/dostavka-ot-babushki.netlify.app_ (1).png", base + "assets/img/projects/dostavka-ot-babushki.netlify.app_ (2).png", base + "assets/img/projects/dostavka-ot-babushki.netlify.app_ (3).png", ],
         description:
