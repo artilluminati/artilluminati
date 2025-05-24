@@ -88,7 +88,7 @@ export const skills = [
 
 export const projects = [
     {
-        id: 10,
+        id: 0,
         title: "Доставка От Бабушки",
         thumbnail: base + "assets/img/projects/puskschool-thumbnail.png",
         skills: ["pet", "react", "tailwind", "js", "html/css", "vite"],
@@ -98,7 +98,7 @@ export const projects = [
         redirect: "https://dostavka-ot-babushki.netlify.app/",
     },
     {
-        id: 0,
+        id: 1,
         title: "Онлайн-школа Пуск",
         thumbnail: base + "assets/img/projects/puskschool-thumbnail.png",
         skills: ["laravel", "tailwind", "php", "js", "html/css", "vite"],
@@ -108,7 +108,7 @@ export const projects = [
         redirect: "https://puskschool.ru/",
     },
     {
-        id: 1,
+        id: 2,
         title: "Cloost SMP",
         thumbnail:
             base + "assets/img/projects/Снимок экрана 2024-07-22 162604.jpg",
@@ -120,7 +120,7 @@ export const projects = [
         redirect: "https://artilluminati.github.io/cloostsmp/",
     },
     {
-        id: 2,
+        id: 3,
         title: "Winstrike Tavern",
         thumbnail: base + "assets/img/projects/winstrike1.jpg",
         skills: ["html/css", "figma", "js", "pet"],
@@ -131,7 +131,7 @@ export const projects = [
         redirect: "https://artilluminati.github.io/winstrike/",
     },
     {
-        id: 3,
+        id: 4,
         title: "Мой кошелёк",
         thumbnail: base + "assets/img/projects/ws-wallet.jpg",
         skills: ["js", "html/css", "pet"],
@@ -140,7 +140,7 @@ export const projects = [
         redirect: "https://artilluminati.github.io/ws-wallet/",
     },
     {
-        id: 4,
+        id: 5,
         title: "Магазин смартфонов",
         thumbnail: base + "assets/img/projects/ws-mobile-phones-thumbnail.jpg",
         skills: ["js", "html/css", "pet"],
@@ -149,7 +149,7 @@ export const projects = [
         redirect: "https://artilluminati.github.io/ws-mobile-phones/",
     },
     {
-        id: 5,
+        id: 6,
         title: "FlightPool",
         thumbnail: base + "assets/img/projects/flighpool.jpg",
         skills: ["html/css", "figma", "pet"],
@@ -158,7 +158,7 @@ export const projects = [
         redirect: "",
     },
     {
-        id: 6,
+        id: 7,
         title: "Robo.School",
         thumbnail: base + "assets/img/projects/robo.school.jpg",
         skills: ["html/css", "pet"],
@@ -169,7 +169,7 @@ export const projects = [
         redirect: "https://artilluminati.github.io/robo-school/",
     },
     {
-        id: 7,
+        id: 8,
         title: "BookMe",
         thumbnail: base + "assets/img/projects/bookme_thumbnail.jpg",
         skills: ["laravel", "php", "html/css", "js", "pet"],
@@ -183,7 +183,7 @@ export const projects = [
         redirect: "",
     },
     {
-        id: 8,
+        id: 9,
         title: "МастерОК",
         thumbnail: base + "assets/img/projects/ws-masterok_.jpg",
         skills: ["php", "html/css", "js", "pet"],
@@ -198,7 +198,7 @@ export const projects = [
         redirect: "",
     },
     {
-        id: 9,
+        id: 10,
         title: "Школьные кружки",
         thumbnail: base + "assets/img/projects/sch49.jpg",
         skills: ["wp", "php", "bs", "html/css"],
