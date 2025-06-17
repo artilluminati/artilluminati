@@ -26,12 +26,6 @@ export const skills = [
         color: "#02d084",
     },
     {
-        id: "bs",
-        title: "Bootstrap",
-        image: base + "/assets/img/skills/bootstrap.png",
-        color: "#7411f6",
-    },
-    {
         id: "react",
         title: "React",
         image: base + "/assets/img/skills/React-icon.svg",
@@ -44,28 +38,18 @@ export const skills = [
         color: "#e42c21",
     },
     {
-        id: "wp",
-        title: "Wordpress",
-        image: base + "/assets/img/skills/wordpress.png",
-        color: "#21759b",
-    },
-    {
-        id: "vscode",
-        title: "VS Code",
-        image: base + "/assets/img/skills/vscode.png",
-        color: "#40aaf2",
-    },
-    {
-        id: "git",
-        title: "Git",
-        image: base + "/assets/img/skills/Git_icon.svg",
-        color: "rgb(240, 81, 51)",
-    },
-    {
         id: "py",
         title: "Python",
         image: base + "/assets/img/skills/Python-logo-notext.svg",
         color: "#8993be",
+    },
+    {
+        id: "electron",
+        title: "Electron JS",
+        image:
+            base +
+            "/assets/img/skills/Electron_Software_Framework_Logo.svg.png",
+        color: "#47848f",
     },
     {
         id: "tailwind",
@@ -74,31 +58,51 @@ export const skills = [
         color: "#38bdf8",
     },
     {
-        id: "vite",
-        title: "Vite",
-        image: base + "/assets/img/skills/vite.svg",
-        color: "#ffc41c",
+        id: "git",
+        title: "Git",
+        image: base + "/assets/img/skills/Git_icon.svg",
+        color: "rgb(240, 81, 51)",
     },
     {
-        id: "pet",
-        title: "pet-проект",
-        color: "#ffffff",
+        id: "wp",
+        title: "Wordpress",
+        image: base + "/assets/img/skills/wordpress.png",
+        color: "#21759b",
+    },
+    {
+        id: "bs",
+        title: "Bootstrap",
+        image: base + "/assets/img/skills/bootstrap.png",
+        color: "#7411f6",
     },
 ];
 
 export const projects = [
     {
-        id: 0,
+        id: 10,
         title: "Онлайн-школа Пуск",
         thumbnail: base + "assets/img/projects/puskschool-thumbnail.png",
-        skills: ["laravel", "tailwind", "php", "js", "html/css", "vite"],
+        skills: ["laravel", "tailwind", "php", "js", "html/css"],
         screenshots: base + "assets/img/projects/puskschool.ru_.png",
         description:
             "Верстка адаптивного лендинга с личным кабинетом и страницей курсов, подключением эквайринга.",
         redirect: "https://puskschool.ru/",
     },
     {
-        id: 1,
+        id: 9,
+        title: "Cloost SMP Launcher",
+        thumbnail: base + "assets/img/projects/smp-launcher-1.png",
+        skills: ["electron", "react", "html/css", "figma", "js"],
+        screenshots: [
+            base + "assets/img/projects/smp-launcher-1.png",
+            base + "assets/img/projects/smp-launcher-2.png",
+            base + "assets/img/projects/smp-launcher-3.png",
+        ],
+        description: "Minecraft лаунчер специально для сервера Cloost SMP. ",
+        redirect: "https://artilluminati.github.io/cloostsmp/",
+    },
+    {
+        id: 8,
         title: "Cloost SMP",
         thumbnail:
             base + "assets/img/projects/Снимок экрана 2024-07-22 162604.jpg",
@@ -110,10 +114,10 @@ export const projects = [
         redirect: "https://artilluminati.github.io/cloostsmp/",
     },
     {
-        id: 2,
+        id: 7,
         title: "Winstrike Tavern",
         thumbnail: base + "assets/img/projects/winstrike1.jpg",
-        skills: ["html/css", "figma", "js", "pet"],
+        skills: ["html/css", "figma", "js"],
         screenshots:
             base + "assets/img/projects/artilluminati.github.io_winstrike_.jpg",
         description:
@@ -121,37 +125,45 @@ export const projects = [
         redirect: "https://artilluminati.github.io/winstrike/",
     },
     {
-        id: 3,
+        id: 6,
         title: "Мой кошелёк",
         thumbnail: base + "assets/img/projects/ws-wallet.jpg",
-        skills: ["js", "html/css", "pet"],
+        skills: ["js", "html/css"],
         screenshots: base + "assets/img/projects/ws-wallet-full.jpg",
-        description: "Приложение для учёта доходов и расходов.",
+        description:
+            "Небольшое приложение для учёта доходов и расходов, с хранением данных в localStorage.",
         redirect: "https://artilluminati.github.io/ws-wallet/",
+    },
+    // {
+    //     id: 5,
+    //     title: "Магазин смартфонов",
+    //     thumbnail: base + "assets/img/projects/ws-mobile-phones-thumbnail.jpg",
+    //     skills: ["js", "html/css"],
+    //     screenshots: base + "assets/img/projects/ws-mobile-phones.jpg",
+    //     description: "",
+    //     redirect: "https://artilluminati.github.io/ws-mobile-phones/",
+    // },
+    {
+        id: 5,
+        title: "Mango",
+        thumbnail: base + "assets/img/projects/Mango_index.html.png",
+        skills: ["html/css", "js"],
+        screenshots: base + "assets/img/projects/Mango_index.html.png",
     },
     {
         id: 4,
-        title: "Магазин смартфонов",
-        thumbnail: base + "assets/img/projects/ws-mobile-phones-thumbnail.jpg",
-        skills: ["js", "html/css", "pet"],
-        screenshots: base + "assets/img/projects/ws-mobile-phones.jpg",
-        description: "",
-        redirect: "https://artilluminati.github.io/ws-mobile-phones/",
-    },
-    {
-        id: 5,
         title: "FlightPool",
         thumbnail: base + "assets/img/projects/flighpool.jpg",
-        skills: ["html/css", "figma", "pet"],
+        skills: ["html/css", "figma"],
         screenshots: base + "assets/img/projects/FlightPool_index.html.jpg",
         description: "",
         redirect: "",
     },
     {
-        id: 6,
+        id: 3,
         title: "Robo.School",
         thumbnail: base + "assets/img/projects/robo.school.jpg",
-        skills: ["html/css", "pet"],
+        skills: ["html/css"],
         screenshots:
             base +
             "assets/img/projects/artilluminati.github.io_robo-school_.jpg",
@@ -159,10 +171,10 @@ export const projects = [
         redirect: "https://artilluminati.github.io/robo-school/",
     },
     {
-        id: 7,
+        id: 2,
         title: "BookMe",
         thumbnail: base + "assets/img/projects/bookme_thumbnail.jpg",
-        skills: ["laravel", "php", "html/css", "js", "pet"],
+        skills: ["laravel", "php", "html/css", "js"],
         screenshots: [
             base + "assets/img/projects/bookme_home.jpg",
             base + "assets/img/projects/bookme_login.jpg",
@@ -173,10 +185,10 @@ export const projects = [
         redirect: "",
     },
     {
-        id: 8,
+        id: 1,
         title: "МастерОК",
         thumbnail: base + "assets/img/projects/ws-masterok_.jpg",
-        skills: ["php", "html/css", "js", "pet"],
+        skills: ["php", "html/css", "js"],
         screenshots: [
             base + "assets/img/projects/ws-masterok_.jpg",
             base + "assets/img/projects/ws-masterok_orders.php.jpg",
@@ -188,7 +200,7 @@ export const projects = [
         redirect: "",
     },
     {
-        id: 9,
+        id: 0,
         title: "Школьные кружки",
         thumbnail: base + "assets/img/projects/sch49.jpg",
         skills: ["wp", "php", "bs", "html/css"],

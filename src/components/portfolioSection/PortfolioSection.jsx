@@ -15,8 +15,6 @@ export default function PortfolioSection() {
                   filterList.every((skill) => project.skills.includes(skill))
               );
 
-    filteredProjects.sort((a, b) => a.id - b.id);
-
     const filteredSkills = skills.filter((skill) =>
         projects.some((project) => project.skills.includes(skill.id))
     );
@@ -33,8 +31,12 @@ export default function PortfolioSection() {
                 ))}
             </div>
             <div className="portfolio__card-container">
-                {filteredProjects.map((project) => (
-                    <ProjectCard key={"project" + project.id} {...project} />
+                {filteredProjects.map((project, index) => (
+                    <ProjectCard
+                        key={"project" + project.id}
+                        {...project}
+                        id={index}
+                    />
                 ))}
             </div>
         </div>
