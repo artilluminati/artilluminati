@@ -79,7 +79,7 @@ export const skills = [
 
 export const projects = [
     {
-        id: 0,
+        id: 11,
         title: "Доставка От Бабушки",
         thumbnail:
             base +
