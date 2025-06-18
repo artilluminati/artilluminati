@@ -37,14 +37,8 @@ export default function Header({ isLoadAnimating }) {
                     </button>
                 </div>
                 <div className="nav__menu">
-                    <a
-                        href="/artilluminati/"
-                        onClick={() => scrollToElement("top")}
-                    >
-                        в начало
-                    </a>
                     <a onClick={() => scrollToElement("skills")}>навыки</a>
-                    <a onClick={() => scrollToElement("projects")}>портфолио</a>
+                    <a onClick={() => scrollToElement("projects")}>проекты</a>
                 </div>
                 <div className="nav__logo">
                     <a href="/artilluminati/">

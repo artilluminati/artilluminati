@@ -56,15 +56,6 @@ export default function MobileNavMenu({ isLoadAnimating }) {
             </div>
             <div className="mobile-menu__menu container">
                 <a
-                    href="/artilluminati/"
-                    onClick={() => {
-                        scrollToElement("top");
-                        toggleMenuOpened();
-                    }}
-                >
-                    в начало
-                </a>
-                <a
                     onClick={() => {
                         scrollToElement("skills");
                         toggleMenuOpened();
@@ -78,7 +69,7 @@ export default function MobileNavMenu({ isLoadAnimating }) {
                         toggleMenuOpened();
                     }}
                 >
-                    портфолио
+                    проекты
                 </a>
             </div>
         </div>
