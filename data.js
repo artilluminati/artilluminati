@@ -143,16 +143,16 @@ export const projects = [
             "Дизайн и верстка landing-page для компютерного клуба Winstrike.",
         redirect: "https://artilluminati.github.io/winstrike/",
     },
-    {
-        id: 6,
-        title: "Мой кошелёк",
-        thumbnail: base + "assets/img/projects/ws-wallet.jpg",
-        skills: ["js", "html/css"],
-        screenshots: base + "assets/img/projects/ws-wallet-full.jpg",
-        description:
-            "Небольшое приложение для учёта доходов и расходов, с хранением данных в localStorage.",
-        redirect: "https://artilluminati.github.io/ws-wallet/",
-    },
+    // {
+    //     id: 6,
+    //     title: "Мой кошелёк",
+    //     thumbnail: base + "assets/img/projects/ws-wallet.jpg",
+    //     skills: ["js", "html/css"],
+    //     screenshots: base + "assets/img/projects/ws-wallet-full.jpg",
+    //     description:
+    //         "Небольшое приложение для учёта доходов и расходов, с хранением данных в localStorage.",
+    //     redirect: "https://artilluminati.github.io/ws-wallet/",
+    // },
     // {
     //     id: 5,
     //     title: "Магазин смартфонов",
@@ -162,74 +162,74 @@ export const projects = [
     //     description: "",
     //     redirect: "https://artilluminati.github.io/ws-mobile-phones/",
     // },
-    {
-        id: 5,
-        title: "Mango",
-        thumbnail: base + "assets/img/projects/Mango_index.html.png",
-        skills: ["html/css", "js"],
-        screenshots: base + "assets/img/projects/Mango_index.html.png",
-    },
-    {
-        id: 4,
-        title: "FlightPool",
-        thumbnail: base + "assets/img/projects/flighpool.jpg",
-        skills: ["html/css", "figma"],
-        screenshots: base + "assets/img/projects/FlightPool_index.html.jpg",
-        description: "",
-        redirect: "",
-    },
-    {
-        id: 3,
-        title: "Robo.School",
-        thumbnail: base + "assets/img/projects/robo.school.jpg",
-        skills: ["html/css"],
-        screenshots:
-            base +
-            "assets/img/projects/artilluminati.github.io_robo-school_.jpg",
-        description: "",
-        redirect: "https://artilluminati.github.io/robo-school/",
-    },
-    {
-        id: 2,
-        title: "BookMe",
-        thumbnail: base + "assets/img/projects/bookme_thumbnail.jpg",
-        skills: ["laravel", "php", "html/css", "js"],
-        screenshots: [
-            base + "assets/img/projects/bookme_home.jpg",
-            base + "assets/img/projects/bookme_login.jpg",
-            base + "assets/img/projects/bookme_book.jpg",
-        ],
-        description:
-            "Сервис для поиска книг с функционалом сохранения понравившихся в избранное.",
-        redirect: "",
-    },
-    {
-        id: 1,
-        title: "МастерОК",
-        thumbnail: base + "assets/img/projects/ws-masterok_.jpg",
-        skills: ["php", "html/css", "js"],
-        screenshots: [
-            base + "assets/img/projects/ws-masterok_.jpg",
-            base + "assets/img/projects/ws-masterok_orders.php.jpg",
-            base + "assets/img/projects/ws-masterok_neworder.php.jpg",
-            base + "assets/img/projects/ws-masterok_master.php.jpg",
-        ],
-        description:
-            "Сервис для отправки заявок на ремонт жилых помещений и их обработки в админ-панели.",
-        redirect: "",
-    },
-    {
-        id: 0,
-        title: "Школьные кружки",
-        thumbnail: base + "assets/img/projects/sch49.jpg",
-        skills: ["wp", "php", "bs", "html/css"],
-        screenshots: [
-            base + "assets/img/projects/l98723ad.beget.tech_.jpg",
-            base +
-                "assets/img/projects/l98723ad.beget.tech_2022_10_20_bcb880-b8bd82b580bdb582b0_.jpg",
-            base + "assets/img/projects/l98723ad.beget.tech_form.jpg",
-        ],
-        description: "Сервис для регистрации в школьные кружки.",
-        redirect: "",
-    },
+    // {
+    //     id: 5,
+    //     title: "Mango",
+    //     thumbnail: base + "assets/img/projects/Mango_index.html.png",
+    //     skills: ["html/css", "js"],
+    //     screenshots: base + "assets/img/projects/Mango_index.html.png",
+    // },
+    // {
+    //     id: 4,
+    //     title: "FlightPool",
+    //     thumbnail: base + "assets/img/projects/flighpool.jpg",
+    //     skills: ["html/css", "figma"],
+    //     screenshots: base + "assets/img/projects/FlightPool_index.html.jpg",
+    //     description: "",
+    //     redirect: "",
+    // },
+    // {
+    //     id: 3,
+    //     title: "Robo.School",
+    //     thumbnail: base + "assets/img/projects/robo.school.jpg",
+    //     skills: ["html/css"],
+    //     screenshots:
+    //         base +
+    //         "assets/img/projects/artilluminati.github.io_robo-school_.jpg",
+    //     description: "",
+    //     redirect: "https://artilluminati.github.io/robo-school/",
+    // },
+    // {
+    //     id: 2,
+    //     title: "BookMe",
+    //     thumbnail: base + "assets/img/projects/bookme_thumbnail.jpg",
+    //     skills: ["laravel", "php", "html/css", "js"],
+    //     screenshots: [
+    //         base + "assets/img/projects/bookme_home.jpg",
+    //         base + "assets/img/projects/bookme_login.jpg",
+    //         base + "assets/img/projects/bookme_book.jpg",
+    //     ],
+    //     description:
+    //         "Сервис для поиска книг с функционалом сохранения понравившихся в избранное.",
+    //     redirect: "",
+    // },
+    // {
+    //     id: 1,
+    //     title: "МастерОК",
+    //     thumbnail: base + "assets/img/projects/ws-masterok_.jpg",
+    //     skills: ["php", "html/css", "js"],
+    //     screenshots: [
+    //         base + "assets/img/projects/ws-masterok_.jpg",
+    //         base + "assets/img/projects/ws-masterok_orders.php.jpg",
+    //         base + "assets/img/projects/ws-masterok_neworder.php.jpg",
+    //         base + "assets/img/projects/ws-masterok_master.php.jpg",
+    //     ],
+    //     description:
+    //         "Сервис для отправки заявок на ремонт жилых помещений и их обработки в админ-панели.",
+    //     redirect: "",
+    // },
+    // {
+    //     id: 0,
+    //     title: "Школьные кружки",
+    //     thumbnail: base + "assets/img/projects/sch49.jpg",
+    //     skills: ["wp", "php", "bs", "html/css"],
+    //     screenshots: [
+    //         base + "assets/img/projects/l98723ad.beget.tech_.jpg",
+    //         base +
+    //             "assets/img/projects/l98723ad.beget.tech_2022_10_20_bcb880-b8bd82b580bdb582b0_.jpg",
+    //         base + "assets/img/projects/l98723ad.beget.tech_form.jpg",
+    //     ],
+    //     description: "Сервис для регистрации в школьные кружки.",
+    //     redirect: "",
+    // },
 ];
